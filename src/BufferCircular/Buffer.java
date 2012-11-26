@@ -1,6 +1,6 @@
 package BufferCircular;
 
-import java.util.*;
+import java.util.Vector;
 
 public class Buffer  {
 
@@ -57,6 +57,7 @@ public class Buffer  {
 	}
 	
 	public synchronized void  set (int valor){
+		
 		if (! complete()){
 		array[s]=valor;
 		s++;
